@@ -1,0 +1,17 @@
+{
+  "name": "prodem-sevices",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./style.scss:./style.css"
+  },
+  "author": "Brillant",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.62.0"
+  },
+  "dependencies": {
+    "@emailjs/browser": "^3.11.0"
+  }
+}
