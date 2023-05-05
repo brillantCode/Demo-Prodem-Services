@@ -135,7 +135,7 @@ header nav p {
   font-weight: 700;
   font-size: calc(18px + 6 * (100vw - 320px) / 680);
 }
-.baner div {
+.baner-container {
   width: 50%;
   height: 350px;
   display: flex;
@@ -143,14 +143,20 @@ header nav p {
   justify-content: center;
   flex-direction: column;
 }
-.baner div h3 {
+.baner-container h3 {
   text-align: center;
   width: 100%;
   color: #bbbdc4;
   font-weight: 700;
   font-size: calc(18px + 6 * (100vw - 320px) / 680);
 }
-.baner div img {
+.baner-container div {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.baner-container div img {
   width: 220px;
   height: 105px;
   object-fit: cover;
