@@ -523,6 +523,10 @@ footer img {
   .baner div br {
     display: none;
   }
+  .baner div img {
+    width: 180px;
+    height: 90px;
+  }
   .logo h2 {
     width: 75%;
   }
