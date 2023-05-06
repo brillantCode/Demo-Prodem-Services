@@ -37,11 +37,12 @@ header nav ul li a {
   height: 78px;
   color: #000;
 }
-header nav p {
+header nav a {
   display: flex;
   margin: 0 32px 0 0;
   align-items: center;
   color: #56c3c7;
+  text-decoration: none;
 }
 
 .home {
@@ -91,11 +92,17 @@ header nav p {
   justify-content: space-around;
   display: flex;
 }
+.home-container form div {
+  display: flex;
+  flex-direction: row;
+  width: 50%;
+  justify-content: space-around;
+}
 .home-container form input {
   color: white;
   display: flex;
-  width: 20%;
-  height: 32px;
+  width: 40%;
+  height: 50px;
   padding: 0 0 0 8px;
   font-size: calc(1px + 1vw);
   align-items: center;
@@ -152,7 +159,7 @@ header nav p {
 }
 .baner-container div {
   display: flex;
-  width: 100%;
+  width: 80%;
   flex-direction: row;
   justify-content: space-around;
 }
@@ -168,7 +175,9 @@ header nav p {
   flex-direction: column;
   align-items: center;
   width: 100%;
+  height: auto;
   background-color: #F6F6F6;
+  border-radius: 40px;
 }
 .logo h2 {
   color: white;
@@ -477,28 +486,26 @@ footer img {
     margin-top: 0;
     display: flex;
     flex-direction: column;
-    height: 100px;
+    height: auto;
     width: 76%;
   }
-  .home-container div p {
-    font-size: calc(5px + 0.7vw);
-    margin: 0;
+  .home-container form {
+    width: 100%;
+    overflow: hidden;
     display: flex;
+    flex-direction: column;
+    height: auto;
+    margin: 10px 0;
+  }
+  .home-container form div {
     align-items: center;
-    height: 36px;
-  }
-  .home-container-top {
+    flex-direction: column;
     width: 100%;
   }
-  .home-container-bot {
-    height: 36px;
-    width: 100%;
-  }
-  .home-container-light {
-    margin: 0 10px;
-  }
-  .home-container-dark {
-    margin: 0 10px;
+  .home-container form input {
+    margin: 10px 0;
+    width: 80%;
+    font-size: 22px;
   }
   .baner {
     flex-direction: column;
@@ -521,6 +528,10 @@ footer img {
   }
   .formules h3 {
     width: 75%;
+  }
+  .formules p {
+    width: 80%;
+    text-align: center;
   }
   .formules-row {
     flex-direction: column;

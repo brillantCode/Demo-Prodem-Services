@@ -45,11 +45,12 @@ header {
                 }
             }
         }
-        p {
+        a {
             display: flex;
             margin: 0 32px 0 0;
             align-items: center;
             color: #56c3c7;
+            text-decoration: none;
         }
     }
 }
@@ -98,11 +99,17 @@ header {
             align-items: center;
             justify-content: space-around;
             display: flex;
+            div {
+                display: flex;
+                flex-direction: row;
+                width: 50%;
+                justify-content: space-around;
+            }
             input {
                 color: $white;
                 display: flex;
-                width: 20%;
-                height: 32px;
+                width: 40%;
+                height: 50px;
                 padding: 0 0 0 8px;
                 font-size: calc(1px + 1vw);
                 align-items: center;
@@ -159,7 +166,7 @@ header {
         }
         div {
             display: flex;
-            width: 100%;
+            width: 80%;
             flex-direction: row;
             justify-content: space-around;
             img {
@@ -177,7 +184,9 @@ header {
     flex-direction: column;
     align-items: center;
     width: 100%;
+    height: auto;
     background-color: $gray;
+    border-radius: 40px;
     h2 {
         color: $white;
         background-color: $dark-blue;
@@ -494,29 +503,25 @@ footer {
             margin-top: 0;
             display: flex;
             flex-direction: column;
-            height: 100px;
+            height: auto;
             width: 76%;
-            div {
-                p {
-                    font-size: calc(5px + .7vw);
-                    margin: 0;
-                    display: flex;
+            form {
+                width: 100%;
+                overflow: hidden;
+                display: flex;
+                flex-direction: column;
+                height: auto;
+                margin: 10px 0;
+                div {
                     align-items: center;
-                    height: 36px;
+                    flex-direction: column;
+                    width: 100%;
                 }
-            }
-            &-top {
-                width: 100%;
-            }
-            &-bot {
-                height: 36px;
-                width: 100%;
-            }
-            &-light {
-                margin: 0 10px;
-            }
-            &-dark {
-                margin: 0 10px;
+                input {
+                    margin: 10px 0;
+                    width: 80%;
+                    font-size: 22px;
+                }
             }
         }
     }
@@ -544,6 +549,10 @@ footer {
     .formules {
         h3 {
             width: 75%;
+        }
+        p {
+            width: 80%;
+            text-align: center;
         }
         &-row {
             flex-direction: column;
