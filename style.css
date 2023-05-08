@@ -177,7 +177,7 @@ header nav a {
   width: 100%;
   height: auto;
   background-color: #F6F6F6;
-  border-radius: 40px;
+  border-radius: 40px 40px 0 0;
 }
 .logo h2 {
   color: white;
@@ -354,6 +354,8 @@ header nav a {
   justify-content: center;
   align-items: center;
   background-color: #F6F6F6;
+  padding-bottom: 32px;
+  border-radius: 0 0 40px 40px;
 }
 .achievement div {
   width: calc(100px + 16vw);
@@ -382,6 +384,23 @@ header nav a {
   font-size: calc(10px + 1vw);
   margin: 0;
   text-align: center;
+}
+
+.map {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.map h3 {
+  color: white;
+  background-color: #449A97;
+  font-size: calc(24px + 6 * (100vw - 320px) / 680);
+  width: calc(500px + 6 * (100vw - 320px) / 680);
+  padding: calc(6px + 6 * (100vw - 320px) / 680) 0;
+  text-align: center;
+  border-radius: 3vh;
+  margin-bottom: 28px;
 }
 
 footer {
@@ -588,6 +607,12 @@ footer img {
   }
   .achievement div h3 span {
     font-size: calc(1px + 3vw);
+  }
+  .map h3 {
+    width: 75%;
+  }
+  .map iframe {
+    width: 80%;
   }
   .footer-baner {
     flex-direction: column;
